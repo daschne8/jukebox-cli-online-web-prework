@@ -44,6 +44,7 @@ def play(my_songs)
   users_response = gets.chomp
   if my_songs.has_key?(users_response)
     puts "Playing #{users_response}"
+    puts "#{my_songs[users_response]}"
     system "open #{my_songs[users_response]}"
 
   else
